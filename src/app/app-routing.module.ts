@@ -26,6 +26,8 @@ const routes: Routes = [
   {path:'',component:LoginComponent}
 ];
 
+
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
