@@ -1,0 +1,78 @@
+<ng-container *ngIf="cartItems.length">
+    <div class="card-table">
+        <h2><b>Shopping Cart</b></h2>
+        <hr class="greenLine">
+      <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+               </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let product of cartItems" class="product-row">
+         
+          <td> <img [src]="product.product.imageURL" alt="Product Image" class="product-image"></td>
+          <td>{{ product.product.name }} <br> Size:{{product.selectedSize}}</td>
+          <!-- <td></td> -->
+          <td>${{product.product.discountPrice ? product.product.discountPrice : product.product.price }}</td>
+          <td class="quantity-controls" >
+            <button (click)="decrementQuantity(product)" >-</button>
+           {{quantity[product.product.id]}}  
+            <button (click)="incrementQuantity(product)">+</button>
+          </td>
+          <td>
+            <div class="ekart-product-detail-close" (click)="removeProduct(product)">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+ <div class="sidebar">
+        <h2 class="Summary">Summary</h2>
+       <p class="estimate-shipping-tax">Estimate Shipping & Tax <i class="fa fa-chevron-down"></i></p>
+        <hr class="summary-line">
+        <table class="summary-table">
+          <tr>
+            <td>Subtotal</td>
+            <td>${{ calculateTotalPrice()}}</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$1</td>
+          </tr>
+          <tr>
+            <td>Order Total</td>
+            <td>${{  calculateTotalPriceWithTax()}}</td>
+          </tr>
+        </table>
+        <hr class="summary-line">
+        <p>Apply Discount Code</p>
+        <div class="discount-code">
+            <input type="text" placeholder="Coupon Code" class="coupon-input">
+          <button class="apply-button">Apply</button>
+        </div>
+        <button class="checkout-button" (click)="proceedToCheckout()">Proceed to Checkout</button>
+      </div>
+  </ng-container>
+  
+
+
+
+<ng-container *ngIf="cartItems.length==0">
+<div class="container">
+    <div class="card">
+    <h5 class="card-title"> My Cart</h5>
+    </div>
+    <div class="center">
+    <img xlass="emptyCart" src="../../assets/empty cart.webp" alt="">
+    <h4>Your cart is empty!</h4>
+    <h6>Add item to it now</h6> 
+    <button class="shopNow" (click)="shopNow()">Shop Now</button>
+    </div>
+</div>
+</ng-container>

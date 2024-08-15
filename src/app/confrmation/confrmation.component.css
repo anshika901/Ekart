@@ -1,0 +1,45 @@
+.confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Take 80% of the viewport height */
+    
+}
+
+.msg {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(248, 248, 248); /* Light blue background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%; /* Increase width */
+}
+h2{
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.msg p {
+    font-size: 20px;
+}
+
+.checkmark {
+    width: 50px; /* Adjust the width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Add margin below the image */
+}
+
+.confirm button {
+    padding: 12px 24px; /* Adjust padding as needed */
+    background-color: #000; /* Black button background */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add margin to the top */
+}
+
+.confirm button:hover {
+    background-color: #333; /* Darker shade of black on hover */
+}

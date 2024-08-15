@@ -1,0 +1,19 @@
+<div class="container">
+ <h2 class="saleheading"><b>Products on Sale</b></h2>
+
+  <filter [all]="totalProductCount" [inStock]="totalInstockCount" [outStock]="totalOutstockCount"
+  (selectedFilterRadioButtonChanged)="onFilterChanged($event)"></filter>
+  
+  <div class="ekart--products--container">
+ <div class="product-column" *ngFor="let prod of saleProducts">
+    <product  (click)="onProductClicked(prod)" *ngIf=" selectedFilterButtonChanged === 'all' || ( selectedFilterButtonChanged === 'true' && prod.is_in_inventory) || ( selectedFilterButtonChanged === 'false' && !prod.is_in_inventory)" [product]="prod" (click)="selectedProduct=prod" #productListComponent></product>
+</div>
+</div>
+</div>
+
+<product-detail *ngIf="showProductDetail" [product]="selectedProduct" (close)="closeProductDetail()"></product-detail>
+
+
+
+
+

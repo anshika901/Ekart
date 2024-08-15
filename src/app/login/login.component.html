@@ -1,0 +1,25 @@
+<div class="login-container">
+    <form class="login-form" #authForm="ngForm" (ngSubmit)="onSubmit()">
+      <h2>{{ isLoginMode ? 'Login Here' : 'Sign Up Here' }}</h2>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="email" required [(ngModel)]="credentials.email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="password-input-container">
+          <input type="{{ visible ? 'text' : 'password' }}" id="password" name="password" required minlength="8" [(ngModel)]="credentials.password">
+           <span class="eyeicon" (click)="togglePasswordVisibility()" ><i [ngClass]="visible?'fa fa-eye':'fa fa-eye-slash'"></i></span>
+        </div>
+      </div>
+      <button type="submit" [disabled]="authForm.invalid" class="switchButton">{{ isLoginMode ? 'Login' : 'Sign Up' }}</button>
+      <div class="signup-link">
+        <p>{{ isLoginMode ? 'If you don\'t have an account?' : 'Already have an account?' }}
+          <button class="app-toggle-btn" type="button" (click)="onSwitchMode()">
+            {{ isLoginMode ? 'Register Here' : 'Login Here' }}
+          </button>
+        </p>
+      </div>
+    </form>
+  </div>
+  

@@ -1,0 +1,11 @@
+<div class="ekart--products--container">
+    <!-- *ngIf="selectedFilterButtonChanged=='all' || prod.is_in_inventory.toString()===selectedFilterButtonChanged -->
+    <!-- *ngIf="searchText ==='' || prod.name.toLowerCase().includes(searchText) -->
+    <ng-container *ngFor="let prod of products">
+        <product [product]="prod" (click)="selectedProduct=prod"
+            *ngIf="searchText ==='' || prod.name.toLowerCase().includes(searchText)"></product>
+
+
+    </ng-container>
+
+</div>

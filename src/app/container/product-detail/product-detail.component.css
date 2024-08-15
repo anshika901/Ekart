@@ -1,0 +1,134 @@
+.overlay{
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3); 
+    z-index: 5; 
+    cursor: pointer; 
+}
+
+.ekart--product--details--info{
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    transition: 1s;
+    width: 480px;
+     top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 25px;
+    height: 100%;
+    
+}
+.ekart-product-detail-close{
+    text-align: right;
+    color:#28282B;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.ekart-product-detail-image{
+    width: 100%;
+    height: 320px;
+}
+.ekart-product-detail{
+    padding: 10px 0px;
+}
+.ekart-product-detail-gbc{
+    margin: 20px 0px;
+}
+
+.ekart-product-detail-gbc > span{
+    background-color: #36454F;
+    margin-left: 0px;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.ekart-product-detail-name{
+    margin: 20px auto;
+}
+.ekart-product-detail-price{
+    font-size: 14px;
+    margin:30px 0px;
+    padding: 25px 10px;
+    background-color: #FCF55F;
+    border:#FFC000 2px solid;
+    border-radius: 5px;
+}
+.ekart-product-detail-size{
+    margin: 30px 0px;
+}
+span{
+    padding: 5px 10px;
+    margin: 5px 5px;
+    border-radius: 5px;
+}
+.ekart-product-detail-available-size{
+    margin: 5px; 
+    background-color: #28282B; 
+    color:white;
+    border-radius: 0px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.ekart-product-detail-available-color{
+    margin: 5px; 
+    border-radius: 50%;
+    padding: 8px 18px;
+    width: 40px;
+    height: 40px;
+}
+.ekart-product-detail-desc{
+    margin-top: 30px;
+    font-size: 14px;
+}
+.ekart-product-detail-addtoCart{
+    margin: 20px 0px;
+}
+.btn-add-to-cart{
+    border: none;
+    background-color: #28282B;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-add-to-cart:hover {
+    background-color: #000; 
+}
+.btn-add-to-cart:active {
+    transform: translateY(1px); 
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+.scroll::-webkit-scrollbar {
+    width:5px;
+}
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius:5px;
+}
+.scroll::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    -webkit-box-shadow: inset 0 0 6px #28282B; 
+}
+
+.selected {
+  
+    background-color: green;
+    color: white;
+}
+.selected-color {
+    border: 3px solid red; 
+}
+

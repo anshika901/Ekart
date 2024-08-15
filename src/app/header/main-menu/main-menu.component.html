@@ -1,0 +1,13 @@
+<!-- <div class="ekart-menu">
+    <a *ngFor="let menu of mainMenuItems" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="[menu.toLowerCase() === 'home' ? '' : menu.toLowerCase()]">{{menu}}</a>
+    <img class="cartimg" src="../../../assets/cart.png" alt="cart">
+   
+</div> -->
+<div class="ekart-menu">
+    <div class="menu-items"*ngIf="loggedIn">
+        <a *ngFor="let menu of mainMenuItems" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="[ menu.toLowerCase()]">{{menu}}</a>
+    </div>
+    <img *ngIf="loggedIn" class="cartimg" src="../../../assets/cart.png" alt="cart" (click)="onCartClicked()">
+    <span *ngIf="loggedIn" class="cart-count">{{ cartCount }}</span>
+    
+</div>

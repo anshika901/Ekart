@@ -1,0 +1,210 @@
+.card{
+    height: 60vh;
+    margin: 25px 25px;
+    padding: 25px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+
+}
+.center img{
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    height: 200px;
+    width: 250px;
+    margin: 20px 0px;
+}
+.BuyNow {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #080808;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 150px;
+}
+.shopNow{
+    background-color: #080808;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 10px 20px;
+}
+
+.card-table {
+ max-width: 850px;
+  margin: 50px ; 
+  }
+  
+
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+
+  .product-table th,
+.product-table td {
+    padding: 8px;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+}
+  
+  .product-row {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-row td {
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ekart-product-detail-close {
+    cursor: pointer;
+     color: #28282B;
+     font-size: 20px;
+     font-weight: lighter;
+     padding: 5px 0px;
+     outline: none;
+     box-shadow: none;
+     top: 0;
+     right: 0;
+     position: absolute;
+  }
+ 
+.quantity-controls button {
+    padding: 6px 13px; 
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #6585a8; 
+    color: #fff;
+    border-radius: 10px; 
+    transition: background-color 0.3s ease; 
+    font-weight: bold;
+    
+}
+
+.quantity-controls button:hover {
+    background-color: #456288; 
+}
+
+.quantity-controls button:active {
+    transform: translateY(1px); 
+}
+ 
+.sidebar {
+    position: fixed;
+    top: 150px;
+    right: 25px;
+    width: 300px;
+    height:auto; 
+    padding: 20px;
+    background-color: #33539e;
+    border-left: 1px solid #ddd;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  .sidebar p {
+    margin-bottom: 10px;
+  }
+  .greenLine {
+    border: none;
+    border-top: 2.5px solid #28a745; 
+    width: 170px;
+    margin-top: 10px;
+}
+ 
+  
+  .product-image {
+    width: 100px; 
+    height: auto; 
+    display: block; 
+    margin-right: 10px; 
+  }
+  
+.estimate-shipping-tax {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+ 
+  }
+  .estimate-shipping-tax i {
+    margin-left: 35px; 
+}
+  
+  .summary-line {
+    border: 1px solid white;
+    margin-bottom: 10px;
+  }
+  
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .summary-table td {
+    padding: 5px 0;
+  }
+  
+  .discount-code {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .coupon-input {
+    border-radius: 20px;
+    padding: 5px 10px;
+
+    border: none;
+  }
+  
+  .apply-button {
+    border: none;
+    background-color: #080808;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-left: -70px;
+    cursor: pointer;
+  }
+  
+  .checkout-button {
+    background-color: #080808;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Summary{
+    color:white;
+    font-weight: bold;
+    padding-bottom: 20px ;
+
+}
+
+  

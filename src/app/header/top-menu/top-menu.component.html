@@ -1,0 +1,11 @@
+<div class="ekart--top--bar">
+    <!-- <a href="#" >Help </a>
+    <a href="#" >Exchange & Returns</a> -->
+    <a href="#" *ngIf="loggedIn">Order Tracker</a>
+    <!-- <a routerLink="/login" *ngIf="!loggedIn"  [ngStyle]="{'font-size.px': loggedIn ? 14 : 18, 'font-weight':
+     loggedIn ? 'normal' : 'bold', 'margin-top.px': loggedIn ? 0 : 5}"  >
+    Login
+    </a> -->
+    <a *ngIf=""loggedIn>User</a>
+    <a *ngIf="loggedIn" (click)="logout()">Logout</a>
+</div>
